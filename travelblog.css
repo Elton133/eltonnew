@@ -1,8 +1,15 @@
 /* Navbar styles */
+body {
+  font-size: 15px;
+  box-sizing: border-box;
+  padding-left: 0px;
+  margin: 0;
+  background-color: rgb(253, 253, 252);
+  overflow-x: hidden;
+}
+
 .h1 {
   font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
 }
 .poetsen-one-regular {
   font-family: "Poetsen One", sans-serif;
@@ -12,6 +19,7 @@
   justify-content: center;
   align-items: center;
 }
+/*Welcome to TOUR GHANA CSS*/
 .redText {
   color: red;
 }
@@ -21,18 +29,12 @@
 .green {
   color: green;
 }
+/* Navbar styles
 .navbar {
-  padding: 10px 40px;
-  background-image: url("kente1.jpg");
+  padding: 30px;
+  background-image: url("pictures/kente1.jpg");
   width: 100%;
-}
-
-.navbar {
-  padding: 45px;
-  background-image: url("kente1.jpg");
   background-repeat: repeat-x;
-  width: 100%;
-  /* height: 30%; */
 }
 
 .navbar ul {
@@ -72,34 +74,90 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
+}*/
 .logo a {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
   color: aliceblue;
   font-weight: bold;
+  display: inline-block;
+  animation: bounce 2s infinite;
+} 
+#mainnavbar{
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 
-body {
-  font-size: 15px;
-  box-sizing: border-box;
-  padding-left: 0px;
-  margin: 0;
-  background-color: rgb(253, 253, 252);
-  overflow-x: hidden;
+#mainnavbar .navbar-brand{
+  font-size: 1.5rem;
+  color: rgb(224, 217, 217);
+  font-weight: 100;
+} 
+
+#mainnavbar .nav-link{
+  color: rgb(230, 223, 223);
 }
+
+.navbar {
+  padding: 30px;
+  background-image: url("pictures/kente1.jpg");
+  width: 100%;
+  background-repeat: repeat-x;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+  display: inline;
+}
+
+.navbar ul li a {
+  color: rgb(245, 236, 236);
+  text-decoration: none;
+  padding: 0px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 24px;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: transparent;
+  transform: scale(1.2);
+  font-size: 26px;
+}
+.navbar ul li a:active {
+  transform: scale(1.1);
+  font-size: 17px;
+}
+  
+.navbar .navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+} 
+
+/*navbar styles end*/
 
 img {
   width: 400px;
   border-radius: 10px;
 }
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
+} */
+/*contains sections*/
 .text-container {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
@@ -111,7 +169,7 @@ header {
   padding-right: 60px;
   padding-left: 60px;
 }
-
+/*images in text container, this manipulates them*/
 .text-container img {
   display: block;
   max-width: 100%;
@@ -120,15 +178,15 @@ header {
 
 .reveal {
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(150px);/*initially moves the element 150px down*/
   opacity: 0;
   transition: all 2s ease;
 }
 .reveal.active {
-  transform: translateY(5px);
+  transform: translateY(5px);/*element moves up 5px and becomes visible*/
   opacity: 1;
 }
-
+/*bounce for tourGhana logo*/
 @keyframes bounce {
   0%,
   20%,
@@ -144,10 +202,7 @@ header {
     transform: translateY(-15px);
   }
 }
-.logo a {
-  display: inline-block;
-  animation: bounce 2s infinite;
-}
+/*this manipulates various images in the div class*/
 .image {
   display: flex;
   flex-wrap: wrap;
@@ -160,3 +215,7 @@ header {
   border-radius: 5px;
   margin: 5px;
 }
+.red .reveal{
+  opacity: 1;
+}
+

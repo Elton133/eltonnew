@@ -1,4 +1,3 @@
-
 ---
 
 # Travel Blog: TOURGHANA
@@ -102,7 +101,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or suggestions, feel free to contact me:
 
-- **Email**: [leslieajayi27@gmail.com](mailto:leslieajayi27@gmail.com)
+- **Email**: [eltonmorden029@gmail.com](mailto:eltonmorden029@gmail.com)
+
+    [leslieajayi27@gmail.com](mailto:leslieajayi27@gmail.com)
 
 ---
 

@@ -1,3 +1,14 @@
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poetsen-one-small {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,8 +16,8 @@
 }
 /* Navbar styles */
 .navbar {
-  padding: 10px 40px;
-  background-image: url("kente1.jpg");
+  padding: 30px;
+  background-image: url("pictures/kente1.jpg");
   background-repeat: repeat-x;
   width: 100%;
   /* height: 30%; */
@@ -38,7 +49,7 @@
 .navbar ul li a:hover {
   background-color: transparent;
   transform: scale(1.2);
-  font-size: 18px;
+  font-size: 28px;
 }
 .navbar ul li a:active {
   transform: scale(1.1);
@@ -59,31 +70,10 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-  font-size: 24px;
-  font-weight: bold;
-  font-style: italic;
-  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-}
-
-header nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-}
-
-header nav a.active {
-  font-weight: bold;
-  text-decoration: underline;
 }
 
 main {
@@ -142,11 +132,31 @@ main {
 .contact-form button:hover {
   background-color: #555;
 }
-
+  
 footer {
   background: transparent;
   color: black;
   text-align: center;
   padding: 10px 0;
   margin-top: 20px;
+}
+/*bounce for tourGhana logo*/
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.logo a {
+  display: inline-block;
+  animation: bounce 2s infinite;
 }

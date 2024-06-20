@@ -37,3 +37,27 @@ function reveal() {
     }
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const aboutSection = document.getElementById("about-section");
+  const missionStatement = document.getElementById("mission-statement");
+  const teamSection = document.getElementById("team-section");
+
+  aboutSection.addEventListener("click", function () {
+    this.style.flex = "3";
+    missionStatement.style.flex = "1";
+    teamSection.style.flex = "1";
+  });
+
+  missionStatement.addEventListener("click", function () {
+    this.style.flex = "3";
+    aboutSection.style.flex = "1";
+    teamSection.style.flex = "1";
+  });
+
+  teamSection.addEventListener("click", function () {
+    this.style.flex = "3";
+    aboutSection.style.flex = "1";
+    missionStatement.style.flex = "1";
+  });
+});

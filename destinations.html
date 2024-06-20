@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations Page</title>
+    <link rel="stylesheet" href="destinations.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Jersey+25+Charted&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Protest+Strike&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <link rel="stylesheet" href="footer.css" />
+  <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <span class="logo">
+          <a href="about.html" class="poetsen-one-regular">TOURGHANA</a>
+        </span>
+        <ul>
+          <div class="menu-toggle" onclick="toggleMenu()"></div>
+          <li>
+            <a href="travelblog.html"
+              ><i class="fa fa-home" aria-hidden="true"></i>Home</a
+            >
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="contactPage.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="poetsen-one-regular">DESTINATIONS</h1>
+    <div class="map-container poetsen-one-small">
+      <span
+        href="greateraccra.html"
+        class="oval"
+        id="greater-accra"
+        onclick="showDetails('greater-accra')"
+      >
+        Greater Accra Region
+      </span>
+      <span class="oval" id="ashanti" onclick="showDetails('ashanti')">
+        Ashanti Region
+      </span>
+      <span class="oval" id="western" onclick="showDetails('western')">
+        Western Region
+      </span>
+      <span class="oval" id="eastern" onclick="showDetails('eastern')">
+        Eastern Region
+      </span>
+      <span class="oval" id="northern" onclick="showDetails('northern')">
+        Northern Region
+      </span>
+      <span class="oval" id="upper-west" onclick="showDetails('upper-west')">
+        Upper West Region
+      </span>
+      <span class="oval" id="upper-east" onclick="showDetails('upper-east')">
+        Upper East Region
+      </span>
+      <span class="oval" id="central" onclick="showDetails('central')">
+        Central Region
+      </span>
+      <span class="oval" id="volta" onclick="showDetails('volta')">
+        Volta Region
+      </span>
+      <span class="oval" id="bono" onclick="showDetails('bono')">
+        Bono Region
+      </span>
+      <span class="oval" id="bono-east" onclick="showDetails('bono-east')">
+        Bono East Region
+      </span>
+      <span class="oval" id="ahafo" onclick="showDetails('ahafo')">
+        Ahafo Region
+      </span>
+      <span
+        class="oval"
+        id="western-north"
+        onclick="showDetails('western-north')"
+      >
+        Western North Region
+      </span>
+      <span class="oval" id="oti" onclick="showDetails('oti')">Oti Region</span>
+      <span class="oval" id="north-east" onclick="showDetails('north-east')">
+        North East Region
+      </span>
+      <span class="oval" id="savannah" onclick="showDetails('savannah')">
+        Savannah Region
+      </span>
+    </div>
+    <main>
+      <div class="row">
+        <section id="image1" class="image reveal poetsen-one-regular">
+          <h2>Elmina Castle</h2>
+          <p class="texts">
+            Year Built: Elmina Castle, also known as São Jorge da Mina (St.
+            George of the Mine), was constructed in 1482. <br />
+            *Built By: The castle was built by the Portuguese under the
+            direction of King John II of Portugal. <br />
+            *Location: It is located in present-day Elmina, Ghana, on the West
+            African coast. <br />
+          </p>
+        </section>
+
+        <section id="image2" class="image reveal poetsen-one-regular">
+          <h2>Mole National Park</h2>
+          <p class="texts"></p>
+        </section>
+
+        <section id="image3" class="image reveal poetsen-one-regular">
+          <h2>Elmina Castle</h2>
+          <p class="texts">
+            *Purpose: Initially, Elmina Castle was established as a trading post
+            for gold and other resources. It soon became a key center for the
+            transatlantic slave trade. <br />
+            *Historical Significance: Elmina Castle is one of the oldest
+            European buildings in existence south of the Sahara. It played a
+            significant role in the history of European colonialism in Africa.
+            <br />
+          </p>
+        </section>
+
+        <section id="image4" class="image reveal poetsen-one-regular">
+          <h2>Elmina Castle</h2>
+          <p class="texts"></p>
+        </section>
+
+        <section id="image5" class="image reveal poetsen-one-regular">
+          <h2>Beaches</h2>
+          <p class="texts">
+            *Prampram, to the southern parts of Ghana where beautiful coastlines
+            lie and nice and beautiful resorts for vacations.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script src="destinations.js"></script>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>
+            We are committed to providing the best travel experiences for our
+            clients. Our goal is to make your journey memorable and enjoyable.
+          </p>
+        </div>
+        <br /><br /><br />
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="travelblog.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="#">Services</a></li> -->
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contactPage.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <ul>
+            <li>
+              <a href="mailto:tourghana@gmail.com">tourghana@gmail.com</a>
+            </li>
+            <li><a href="tel:+1234567890">+123 456 7890</a></li>
+            <li>Accra , Ghana</li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h2>Follow Us</h2>
+          <ul class="social-icons">
+            <li>
+              <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 TourGhana. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
